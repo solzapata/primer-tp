@@ -1,0 +1,13 @@
+.header-first{
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    .container-header{
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 85px
+    }
+}
