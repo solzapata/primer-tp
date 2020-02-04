@@ -1,13 +1,15 @@
 .header-first{
-    height: 60px;
-    background-color: #fff;
+    height: 80px;
+    background-color: $color-secondary;
     position: fixed;
     width: 100%;
+    top: 0;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    z-index: 1;
     .container-header{
-        width: 1200px;
         display: flex;
         justify-content: space-between;
         position: relative;
-        left: 85px
+        margin: auto;
     }
 }

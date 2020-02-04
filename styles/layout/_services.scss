@@ -1,0 +1,12 @@
+#services{
+    background-color: #ecf5ff;
+    padding: $padding-section;
+    box-shadow: $box-section;
+}
+
+.content-services{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

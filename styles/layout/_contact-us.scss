@@ -1,0 +1,13 @@
+#contact-us{
+    padding: $padding-section;
+    box-shadow: $box-section;
+}
+
+.container-contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    @media (max-width:993px){
+        flex-direction: column;
+    }
+}

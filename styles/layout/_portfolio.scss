@@ -1,0 +1,17 @@
+#portfolio{
+    padding: $padding-section;
+    box-shadow: $box-section;
+}
+
+.portfolio-container-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-container{
+    width: 400px;
+    justify-content: space-between;
+    display: flex;
+    margin: 30px auto;
+}
