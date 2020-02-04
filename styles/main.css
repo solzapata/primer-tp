@@ -196,8 +196,7 @@
 
 .text-section {
   color: #444;
-  margin: 10px 20px 20px 5px;
-  font-size: 14px; }
+  margin: 10px 20px 20px 5px; }
 
 #sub-extra {
   font-weight: 600;
@@ -218,6 +217,8 @@
   @media (max-width: 770px) {
     .card-services {
       width: 100%; } }
+  .card-services #text-card-services {
+    font-size: 14px; }
   .card-services .link-services {
     color: black;
     text-decoration: none; }
@@ -362,6 +363,11 @@
   border-radius: 50%;
   background-color: #007bff;
   color: #fff; }
+
+aside .fa-angle-down {
+  padding-left: 10px; }
+aside #angle-deep {
+  padding-left: 10px; }
 
 .drop .fa-angle-down {
   font-weight: 600;
@@ -581,7 +587,7 @@
   padding-top: 30px;
   color: #fff; }
   .nav-aside li {
-    padding: 10px 30px; }
+    padding: 10px 0px 10px 30px; }
 
 .item-aside {
   color: #fff;
@@ -595,13 +601,15 @@
   list-style: none; }
 
 .drop-aside {
-  left: -45px;
-  position: relative; }
+  left: -10px;
+  position: relative;
+  color: white; }
 
 .deep-aside {
   position: relative;
-  right: -15px;
-  width: 300px; }
+  right: 0px;
+  width: 300px;
+  color: white; }
 
 .item-drop-aside:hover .drop-aside {
   display: block; }
@@ -742,10 +750,18 @@
           color: #74b5fc;
           text-decoration: underline; }
 
+#home-element {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0px;
+  left: 50%; }
+
 #about {
   background-color: #fff;
   padding: 40px 0px 1px 0px;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  position: relative; }
 
 .container-about {
   margin: auto;
@@ -772,16 +788,31 @@
           width: 60%;
           margin: auto; } }
 
+#about-element {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -80px;
+  left: 50%; }
+
 #services {
   background-color: #ecf5ff;
   padding: 40px 0px 1px 0px;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  position: relative; }
 
 .content-services {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
+
+#services-element {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -80px;
+  left: 50%; }
 
 #extra {
   padding: 40px 0px 1px 0px;
@@ -802,7 +833,8 @@
 
 #portfolio {
   padding: 40px 0px 1px 0px;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  position: relative; }
 
 .portfolio-container-images {
   display: flex;
@@ -814,6 +846,13 @@
   justify-content: space-between;
   display: flex;
   margin: 30px auto; }
+
+#portfolio-element {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -80px;
+  left: 50%; }
 
 #testimonials {
   background-color: #ecf5ff;
@@ -835,7 +874,8 @@
 
 #team {
   padding: 40px 0px 1px 0px;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  position: relative; }
 
 .container-team {
   display: flex;
@@ -846,6 +886,13 @@
   @media (max-width: 770px) {
     .container-team {
       flex-direction: column; } }
+
+#team-element {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -80px;
+  left: 50%; }
 
 #clients {
   background-color: #ecf5ff;
@@ -875,7 +922,8 @@
 
 #contact-us {
   padding: 40px 0px 1px 0px;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  position: relative; }
 
 .container-contact {
   display: flex;
@@ -884,6 +932,13 @@
   @media (max-width: 993px) {
     .container-contact {
       flex-direction: column; } }
+
+#contact-us-element {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -80px;
+  left: 50%; }
 
 footer {
   padding: 40px 0px 1px 0px;
@@ -954,20 +1009,21 @@ footer {
 
 #aside {
   width: 100%;
-  left: -1200px;
+  left: -100%;
   transition: .1s;
   position: fixed;
   top: 0;
   z-index: 2; }
 
 #aside:target {
-  transform: translateX(1200px); }
+  transform: translateX(100%); }
 
 .aside-principal {
   background-color: rgba(19, 39, 57, 0.8);
   height: 100vh;
-  width: 300px;
-  color: #fff; }
+  width: 350px;
+  color: #fff;
+  overflow-y: scroll; }
 
 .aside-back {
   height: 100vh;

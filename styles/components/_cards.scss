@@ -40,7 +40,6 @@
 .text-section{
     color: $font-color-text;
     margin: 10px 20px 20px 5px;
-    font-size: 14px;
 }
 
 #sub-extra{
@@ -64,6 +63,9 @@
     transition: .3s;
     @media (max-width:770px){
         width: 100%;
+    }
+    #text-card-services{
+        font-size: 14px;
     }
     .link-services{
         color: black;
